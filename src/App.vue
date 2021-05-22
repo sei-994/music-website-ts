@@ -1,194 +1,38 @@
 <template>
   <v-app>
-    <v-img src="../public/images/home-main.jpg"></v-img>
-    <v-container class="fill-height" fluid>
-      <v-row class="d-flex ma-6">
-        <v-col cols="6">
-          <div class="mx-14">
-            <v-img
-              src="../public/images/card.jpg"
-              height="330"
-              width="300"
-              class="grey darken-4"
-              contain
-            ></v-img>
-
-            <v-text
-              class="text-h5 teal--text text--accent-4 font-weight-regular"
-              >Cum sociis natoque penatibus et magnis dis <br />
-              parturient montes 2021.06.15 Digital Release
-            </v-text>
-          </div>
-        </v-col>
-        <v-col cols="6">
-          <div class="mx-14">
-            <v-img
-              src="../public/images/cards.jpg"
-              height="330"
-              width="300"
-              contain
-              class="grey darken-4"
-            ></v-img>
-
-            <v-text
-              class="text-h5 font-weight-regular red--text text--lighten-3"
-              >Cum sociis natoque penatibus et magnis dis parturient montes
-              2021.06.15 Digital Release
-            </v-text>
-          </div>
-        </v-col>
-      </v-row>
-
-      <v-row class="ma-15" align-content="center">
-        <v-col class="d-flex justify-center">
-          <v-icon size="32" class="ma-3">mdi-instagram</v-icon>
-
-          <v-icon size="32" class="ma-3">mdi-facebook</v-icon>
-
-          <a
-            href="https://twitter.com/hiromasa_eve
-
-"
-          >
-            <v-icon size="32" class="ma-3">mdi-twitter</v-icon>
-          </a>
-          <v-icon size="32" class="ma-3">mdi-youtube</v-icon>
-
-          <v-icon size="32" class="ma-3">mdi-spotify</v-icon>
-
-          <v-icon size="32" class="ma-3">mdi-apple</v-icon>
-        </v-col>
-      </v-row>
-    </v-container>
-    <v-content>
-      <!--  -->
-      <v-container class="d-flex flex-column" fill-w justify="center">
-        <!-- NEWS -->
-        <div class="news--box mx-14">
-          <v-row justify="around">
-            <v-col cols="4">
-              <v-text class="text-h3">NEWS</v-text>
-            </v-col>
-            <v-col cols="8">
-              <v-card class="d-flex justify-center" elevation="2" shaped tile>
-                <v-col cols="3">
-                  <v-card-subtitle class="font-weight-light text-h6"
-                    >2021.03.10</v-card-subtitle
-                  >
-                </v-col>
-                <v-col cols="9">
-                  <v-card-text class="font-weight-regular text-h5"
-                    >【RELEASE】『rendez-vous(Instrumental)』RELEASE！</v-card-text
-                  >
-                  <v-card-text class="font-weight-light"
-                    >泣き虫☔︎の1st
-                    Album『rendez-vous』のインスト音源『rendez-vous(Instrumental)』が各配信サイトにてリ...</v-card-text
-                  >
-                </v-col>
-              </v-card>
-            </v-col>
-          </v-row>
-          <v-row justify="center" class="mt-6 mb-15">
-            <v-col cols="1">
-              <v-btn raised small text x-small class="">
-                <v-icon>mdi-arrow-right-circle-outline</v-icon> more</v-btn
-              >
-            </v-col>
-          </v-row>
-        </div>
-        <!-- DISCO -->
-        <div class="news--box mx-14">
-          <v-row justify="around">
-            <v-col cols="4">
-              <v-text class="text-h3">DISCO</v-text>
-            </v-col>
-            <v-col cols="8">
-              <v-card class="d-flex justify-center" elevation="2" shaped tile>
-                <v-col cols="3">
-                  <v-card-subtitle class="font-weight-light text-h6"
-                    >2021.03.10</v-card-subtitle
-                  >
-                </v-col>
-                <v-col cols="9">
-                  <v-card-text class="font-weight-regular text-h5"
-                    >【RELEASE】『rendez-vous(Instrumental)』RELEASE！</v-card-text
-                  >
-                  <v-card-text class="font-weight-light"
-                    >泣き虫☔︎の1st
-                    Album『rendez-vous』のインスト音源『rendez-vous(Instrumental)』が各配信サイトにてリ...</v-card-text
-                  >
-                </v-col>
-              </v-card>
-            </v-col>
-          </v-row>
-          <v-row justify="center" class="mt-6 mb-15">
-            <v-col cols="1">
-              <v-btn raised small text x-small class="">
-                <v-icon>mdi-arrow-right-circle-outline</v-icon> more</v-btn
-              >
-            </v-col>
-          </v-row>
-        </div>
-        <!-- LIVE -->
-        <div class="news--box mx-14">
-          <v-row justify="around">
-            <v-col cols="4">
-              <v-text class="text-h3">LIVE</v-text>
-            </v-col>
-          </v-row>
-          <v-row justify="center" class="mt-6 mb-15">
-            <v-col cols="1">
-              <v-btn raised small text x-small class="">
-                <v-icon>mdi-arrow-right-circle-outline</v-icon> more</v-btn
-              >
-            </v-col>
-          </v-row>
-        </div>
-        <!-- VIDEO -->
-        <div class="news--box mx-14">
-          <v-row justify="around">
-            <v-col cols="4">
-              <v-text class="text-h3">VIDEO</v-text>
-            </v-col>
-          </v-row>
-          <iframe
-            class="mt-8"
-            width="1100"
-            height="516"
-            src="https://www.youtube.com/embed/_Y6EGkUOR00"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <v-row justify="center" class="mt-6 mb-15">
-            <v-col cols="1">
-              <v-btn raised small text x-small class="">
-                <v-icon>mdi-arrow-right-circle-outline</v-icon> more</v-btn
-              >
-            </v-col>
-          </v-row>
-        </div>
-        <v-btn raised small text x-small>
-          <v-icon>mdi-arrow-right-circle-outline</v-icon> more</v-btn
+    <v-dialog v-model="dialog" fullscreen light class="d-flex justify-center">
+      <v-list nav dense @click="dialog = false">
+        <v-list-item-group class="d-flex flex-column">
+          <v-list-item>
+            <v-list-item-title @click="goHome">HOME </v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="goNews">NEWS</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="dialog = false">DISCO</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="dialog = false">VIDEO</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="dialog = false">LIVE</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="dialog = false">STORE</v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-dialog>
+    <v-main>
+      <v-app-bar app dark class="app-bar">
+        <v-toolbar-title></v-toolbar-title>
+        <v-app-bar-nav-icon @click="dialog = true"
+          ><v-icon>mdi-snowflake-melt</v-icon></v-app-bar-nav-icon
         >
-        <!-- STORE -->
-        <div class="news--box mx-14">
-          <v-row justify="around">
-            <v-col cols="4">
-              <v-text class="text-h3">STORE</v-text>
-            </v-col>
-          </v-row>
-          <v-row justify="center" class="mt-6 mb-15">
-            <v-col cols="1">
-              <v-btn raised small text x-small class="">
-                <v-icon>mdi-arrow-right-circle-outline</v-icon> more</v-btn
-              >
-            </v-col>
-          </v-row>
-        </div>
-      </v-container>
-    </v-content>
+      </v-app-bar>
+      <router-view />
+    </v-main>
     <v-footer padless class="white">
       <v-row justify="center">
         <v-text class="my-5">©Shindamenosanaka All right reserved. </v-text>
@@ -196,15 +40,15 @@
     </v-footer>
   </v-app>
 </template>
-
 <script>
+import constants from "./common/constants"
+
 export default {
-  name: "App",
-
-  components: {},
-
+  name: "app",
   data() {
     return {
+      dialog: false,
+      menuItems: constants.menuItems,
       mainImage: "../public/images/home-main.jpg",
     }
   },
@@ -215,6 +59,21 @@ export default {
     //   console.log(this)
     //   window.location = url
     // },
+    goHome() {
+      this.dialog = false
+      this.$router.push({
+        path: "/",
+        name: "Home",
+      })
+    },
+    goNews() {
+      this.dialog = false
+
+      this.$router.push({
+        path: "/news",
+        name: "news",
+      })
+    },
   },
 }
 </script>
@@ -223,5 +82,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.app-bar {
+  opacity: 0.2;
+  z-index: 10;
 }
 </style>
