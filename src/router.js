@@ -30,5 +30,11 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/Contact.vue"),
     },
+    {
+      path: "/video",
+      name: "video",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Video.vue"),
+    },
   ],
 })

@@ -13,7 +13,7 @@
             <v-list-item-title @click="goDisco">DISCO</v-list-item-title>
           </v-list-item>
           <v-list-item>
-            <v-list-item-title @click="dialog = false">VIDEO</v-list-item-title>
+            <v-list-item-title @click="goVideo">VIDEO</v-list-item-title>
           </v-list-item>
 
           <v-list-item>
@@ -78,6 +78,14 @@ export default {
       this.$router.push({
         path: "/disco",
         name: "disco",
+      })
+    },
+    goVideo() {
+      this.dialog = false
+
+      this.$router.push({
+        path: "/video",
+        name: "video",
       })
     },
     goContact() {
