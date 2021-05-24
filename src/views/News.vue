@@ -57,12 +57,16 @@
           </v-text>
         </v-row>
       </div>
+      <icon-bar></icon-bar>
     </v-container>
   </v-app>
 </template>
 
 <script>
-export default {}
+import IconBar from "../components/IconBar.vue"
+export default {
+  components: { IconBar },
+}
 </script>
 
 <style lang="scss">

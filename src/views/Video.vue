@@ -28,11 +28,15 @@
         </v-row> -->
       </div>
     </v-container>
+    <icon-bar></icon-bar>
   </v-app>
 </template>
 
 <script>
-export default {}
+import IconBar from "../components/IconBar.vue"
+export default {
+  components: { IconBar },
+}
 </script>
 
 <style></style>

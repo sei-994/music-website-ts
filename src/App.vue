@@ -33,7 +33,7 @@
     </v-main>
     <v-footer padless class="white">
       <v-row justify="center">
-        <v-text class="my-5">©Shindamenosanaka All right reserved. </v-text>
+        <v-text class="my-5">© 2021 sei-994 All right reserved. </v-text>
       </v-row>
     </v-footer>
   </v-app>
