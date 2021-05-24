@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-dialog v-model="dialog" fullscreen light class="d-flex justify-center">
+    <v-dialog v-model="dialog" fullscreen class="d-flex justify-center">
       <v-list nav dense @click="dialog = false">
         <v-list-item-group class="d-flex flex-column">
           <v-list-item>
@@ -10,22 +10,20 @@
             <v-list-item-title @click="goNews">NEWS</v-list-item-title>
           </v-list-item>
           <v-list-item>
-            <v-list-item-title @click="dialog = false">DISCO</v-list-item-title>
+            <v-list-item-title @click="goDisco">DISCO</v-list-item-title>
           </v-list-item>
           <v-list-item>
             <v-list-item-title @click="dialog = false">VIDEO</v-list-item-title>
           </v-list-item>
+
           <v-list-item>
-            <v-list-item-title @click="dialog = false">LIVE</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title @click="dialog = false">STORE</v-list-item-title>
+            <v-list-item-title @click="goContact">CONTACT</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-dialog>
     <v-main>
-      <v-app-bar app dark class="app-bar">
+      <v-app-bar app light class="app-bar">
         <v-toolbar-title></v-toolbar-title>
         <v-app-bar-nav-icon @click="dialog = true"
           ><v-icon>mdi-snowflake-melt</v-icon></v-app-bar-nav-icon
@@ -74,17 +72,38 @@ export default {
         name: "news",
       })
     },
+    goDisco() {
+      this.dialog = false
+
+      this.$router.push({
+        path: "/disco",
+        name: "disco",
+      })
+    },
+    goContact() {
+      this.dialog = false
+
+      this.$router.push({
+        path: "/contact",
+        name: "contact",
+      })
+    },
   },
 }
 </script>
 <style lang="scss">
+* {
+  font-family: "Noto Serif JP", serif;
+  font-weight: light;
+}
+
 .icon--box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .app-bar {
-  opacity: 0.2;
+  opacity: 0.75;
   z-index: 10;
 }
 </style>

@@ -1,7 +1,7 @@
 import Vue from "vue"
 import Router from "vue-router"
 import Home from "./views/Home.vue"
-// import News from "./views/News"
+
 Vue.use(Router)
 
 export default new Router({
@@ -17,6 +17,18 @@ export default new Router({
       name: "news",
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/News.vue"),
+    },
+    {
+      path: "/disco",
+      name: "disco",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Disco.vue"),
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Contact.vue"),
     },
   ],
 })
