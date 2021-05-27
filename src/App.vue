@@ -103,6 +103,7 @@ export default {
 * {
   font-family: "Noto Serif JP", serif;
   font-weight: light;
+  
 }
 
 .icon--box {
@@ -113,5 +114,6 @@ export default {
 .app-bar {
   opacity: 0.75;
   z-index: 10;
+ 
 }
 </style>

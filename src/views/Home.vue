@@ -1,18 +1,17 @@
 <template>
   <v-app>
     <v-img>
-      <div class="content__container-img">
-        <div class="content__container-text">
+      <v-container class="fill-height content__container-img" fluid>
+        <v-row class="content__container-text">
           <h2 class="pa-8">Aenean commodo</h2>
           <h1>Lorem ipsum dolor sit</h1>
-        </div>
-      </div>
+        </v-row>
+      </v-container>
     </v-img>
 
     <!-- <v-img src="../../public/images/home-main.jpg"></v-img> -->
-    <v-container class="fill-height" fluid>
-      <v-row class="d-flex ma-15" justify="center">
-        <!-- <v-col cols="6">
+
+    <!-- <v-col cols="6">
           <div class="mx-14">
             <v-img
               src="../../public/images/card.jpg"
@@ -29,68 +28,64 @@
             </v-text>
           </div>
         </v-col> -->
-        <v-col cols="5">
-          <div class="mx-14">
-            <a href="https://big-up.style/musics/444605">
-              <v-card max-width="400" class="mb-4">
-                <v-img
-                  src="../../public/images/博聖さまアイコン正面.jpg"
-                  contain
-                  class="grey darken-4"
-                ></v-img>
-                <v-card-text class="font-weight-regular text-h5"
-                  >【RELEASE】<br />『瞳の奥に刺さる』</v-card-text
-                >
-                <v-card-text class="font-weight-light"
-                  >博聖の1st Album『瞳の奥に刺さる』<br />が各配信サイトにてリリース！</v-card-text
-                >
-              </v-card>
-            </a>
-          </div>
-          <!-- <v-text
+
+    <v-container class="d-flex flex-column">
+      <div class="mx-lg-14 mx-xs-1">
+        <v-row class="d-flex ma-15" justify-lg="center">
+          <!-- <a href="https://big-up.style/musics/444605"> -->
+          <v-col lg="5" class="main-card-box">
+            <v-card class="mb-4 d-flex flex-column main-card-contents">
+              <v-img
+                src="../../public/images/博聖さまアイコン正面.jpg"
+                contain
+                class="grey darken-4"
+              ></v-img>
+
+              <v-card-text class="font-weight-regular text-h5"
+                >【RELEASE】<br />『瞳の奥に刺さる』</v-card-text
+              >
+              <v-card-text class="font-weight-light"
+                >博聖の1st Album『瞳の奥に刺さる』<br />が各配信サイトにてリリース！</v-card-text
+              >
+            </v-card>
+          </v-col>
+
+          <!-- </a> -->
+        </v-row>
+      </div>
+      <!-- <v-text
               class="text-h5 font-weight-regular red--text text--lighten-3"
               >Cum sociis natoque penatibus et magnis dis parturient montes
               2021.06.15 Digital Release
             </v-text> -->
-          <!-- <div class="album-text-box"> -->
-          <!-- </div> -->
-        </v-col>
-      </v-row>
+      <!-- <div class="album-text-box"> -->
+      <!-- </div> -->
 
       <icon-bar></icon-bar>
-    </v-container>
 
-    <v-container class="d-flex flex-column" justify="center">
       <!-- NEWS -->
-      <div class="news--box ma-14">
-        <v-row justify="around">
-          <v-col cols="4">
+      <div class="ma-lg-14">
+        <v-row justify-lg="around">
+          <v-col lg="4">
             <v-text class="section-title-text">NEWS</v-text>
           </v-col>
-          <v-col cols="8">
-            <v-card
-              @click="goNews"
-              class="d-flex justify-center"
-              elevation="2"
-              shaped
-              tile
-            >
-              <v-col cols="3">
-                <v-card-subtitle class="font-weight-light text-h6"
-                  >2020.12</v-card-subtitle
-                >
-              </v-col>
-              <v-col cols="9">
-                <v-card-text class="font-weight-regular text-h5"
-                  >【RELEASE】『瞳の奥に刺さる』</v-card-text
-                >
-                <v-card-text class="font-weight-light"
-                  >博聖の1st
-                  Album『瞳の奥に刺さる』が各配信サイトにてリ...</v-card-text
-                >
-              </v-col>
-            </v-card>
-          </v-col>
+
+          <v-card @click="goNews" class="d-lg-flex" elevation="2" shaped tile>
+            <v-col lg="3">
+              <v-card-subtitle class="font-weight-light text-h6"
+                >2020.12</v-card-subtitle
+              >
+            </v-col>
+            <v-col lg="9">
+              <v-card-text class="font-weight-regular text-h5"
+                >【RELEASE】『瞳の奥に刺さる』</v-card-text
+              >
+              <v-card-text class="font-weight-light"
+                >博聖の1st
+                Album『瞳の奥に刺さる』が各配信サイトにてリ...</v-card-text
+              >
+            </v-col>
+          </v-card>
         </v-row>
         <v-row justify="center" class="mt-6 mb-15">
           <v-col cols="1">
@@ -101,27 +96,27 @@
         </v-row>
       </div>
       <!-- DISCO -->
-      <div class="news--box ma-14">
-        <v-row justify="around">
-          <v-col cols="4">
+      <div class="ma-lg-14">
+        <v-row justify-lg="around">
+          <v-col lg="4">
             <v-text class="section-title-text">DISCO</v-text>
           </v-col>
-          <v-col cols="8">
+          <v-col lg="8">
             <v-card
               @click="goDisco"
-              class="d-flex justify-center"
+              class="d-lg-flex justify-center"
               elevation="2"
               shaped
               tile
             >
-              <v-col cols="3">
+              <v-col lg="3">
                 <v-img
                   src="../../public/images/博聖様アイコン横顔.jpg"
                   width="100%"
                   height="100%"
                 ></v-img>
               </v-col>
-              <v-col cols="9">
+              <v-col lg="9">
                 <v-card-subtitle class="font-weight-light text-h6"
                   >1st CD</v-card-subtitle
                 >
@@ -151,16 +146,18 @@
           <v-col cols="4">
             <v-text class="section-title-text">VIDEO</v-text>
           </v-col>
-          <iframe
-            class="mt-8"
-            width="100%"
-            height="600"
-            src="https://www.youtube.com/embed/_Y6EGkUOR00"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <v-container class="iframeWrapper">
+            <iframe
+              class="mt-8"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/_Y6EGkUOR00"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </v-container>
         </v-row>
         <!-- <v-row justify="center" class="mt-6 mb-15">
           <v-col cols="1">
@@ -282,4 +279,32 @@ a {
     text-align: center;
   }
 }
+
+.iframeWrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 60%;
+}
+
+.iframeWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+// .main-card-box{
+//    position: relative;
+//      width:100%;
+//     height:0;
+//     padding-top:60%;
+// }
+// .main-card-contents{
+//    position: absolute;
+//     top: ;
+//     left: 0;
+//     width: 100%;
+//     height:100%;
+// }
 </style>

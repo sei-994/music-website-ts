@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-container class="d-flex flex-column mt-8" justify="center">
-      <v-row justify="around">
+      <v-row justify="around" class="ml-4">
         <v-text class="section-title-text">CONTACT</v-text>
       </v-row>
       <div class="form__main-img mt-13">
