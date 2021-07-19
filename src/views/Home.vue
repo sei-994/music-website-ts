@@ -2,10 +2,7 @@
   <v-app>
     <v-img>
       <v-container class="fill-height content__container-img" fluid>
-        <v-row class="content__container-text">
-          <h2 class="pa-8">Aenean commodo</h2>
-          <h1>Lorem ipsum dolor sit</h1>
-        </v-row>
+        <v-row class="content__container-text"> </v-row>
       </v-container>
     </v-img>
 
@@ -36,7 +33,7 @@
           <v-col lg="5" class="main-card-box">
             <v-card class="mb-4 d-flex flex-column main-card-contents">
               <v-img
-                src="../../public/images/博聖さまアイコン正面.jpg"
+                src="../../public/images/batch.png"
                 contain
                 class="grey darken-4"
               ></v-img>
@@ -183,14 +180,14 @@
             ></v-img>
           </v-card>
         </v-row>
-        <v-row justify="center">
-          <v-card-text class="font-weight-light contact-text">
+        <!-- <v-row justify="center"> -->
+        <!-- <v-card-text class="font-weight-light contact-text">
             世紀末生まれのアーティスト。<br />
             海外で東京藝術大学卒業のピアニストに師事をし、帰国後小学6年生からピアノで作曲を始める。<br />
             クラシックやジャズ、ロック、ボーカロイドなど様々なジャンルの音楽の影響を受けており、<br />
             繊細で時に暴力的なピアノと爽快なギターを軸に、エモーショナルなサウンドを内包した芸術性の高い音楽を作曲する。</v-card-text
-          >
-        </v-row>
+          > -->
+        <!-- </v-row> -->
         <v-row justify="center" class="mt-6 mb-15">
           <v-col cols="1">
             <v-btn raised small text x-small @click="goContact">
@@ -243,7 +240,7 @@ export default {
       padding-left: 4rem;
     }
     &img {
-      background-image: url(../../public/images/home-main.jpg);
+      background-image: url(../../public/images/博聖様アイコン横顔.jpg);
       background-size: cover;
       background-position: center center;
       width: 100%;
