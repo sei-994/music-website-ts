@@ -62,7 +62,7 @@
 
     <v-footer padless class="white">
       <v-row justify="center">
-        <v-text class="my-5">© 2021 sei-994 All right reserved. </v-text>
+        <v-text class="my-5">© 2021 hiromasa_eve All right reserved. </v-text>
       </v-row>
     </v-footer>
   </v-app>
@@ -197,7 +197,7 @@ export default {
 /*サイドバー*/
 .menu-enter-active,
 .menu-leave-active {
-  transition: 2s;
+  transition: 0.8s;
 }
 .menu-enter,
 .menu-leave-to {

@@ -42,7 +42,7 @@
                 >【RELEASE】<br />『瞳の奥に刺さる』</v-card-text
               >
               <v-card-text class="font-weight-light"
-                >博聖の1st Album『瞳の奥に刺さる』<br />が各配信サイトにてリリース！</v-card-text
+                >博聖の1st Single<br />が各配信サイトにてリリース！</v-card-text
               >
             </v-card>
           </v-col>
@@ -79,7 +79,7 @@
               >
               <v-card-text class="font-weight-light"
                 >博聖の1st
-                Album『瞳の奥に刺さる』が各配信サイトにてリ...</v-card-text
+                Single『瞳の奥に刺さる』が各配信サイトにてリ...</v-card-text
               >
             </v-col>
           </v-card>
