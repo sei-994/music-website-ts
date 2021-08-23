@@ -4,11 +4,14 @@
       <!-- DISCO -->
       <v-row justify-lg="center" class="ma-5">
         <v-card max-width="700" max-height="700" class="disco-img-box">
-          <v-img src="../../public/images/博聖さまアイコン正面.jpg" class="disco-img"></v-img>
+          <v-img
+            src="../../public/images/博聖さまアイコン正面.jpg"
+            class="disco-img"
+          ></v-img>
         </v-card>
       </v-row>
 
-     <div class=" ma-lg-14">
+      <div class="ma-lg-14">
         <v-row justify-lg="around">
           <v-col lg="4">
             <v-text class="section-title-text">DISCO</v-text>
@@ -30,7 +33,7 @@
               </v-col>
               <v-col lg="9">
                 <v-card-subtitle class="font-weight-light text-h6"
-                  >1st CD</v-card-subtitle
+                  >1st Single</v-card-subtitle
                 >
                 <v-card-text class="font-weight-regular text-h5"
                   >『瞳の奥に刺さる』</v-card-text
@@ -43,7 +46,6 @@
             </v-card>
           </v-col>
         </v-row>
-       
       </div>
       <icon-bar></icon-bar>
     </v-container>
@@ -61,17 +63,17 @@ export default {
 .news-title {
   font-size: 2.5rem;
 }
-.disco-img-box{
-      position: relative;
-     width:100%;
-    height:0;
-    padding-top: 50%;
+.disco-img-box {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 50%;
 }
-.disco-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height:100%;
+.disco-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>

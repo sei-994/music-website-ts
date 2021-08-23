@@ -18,13 +18,13 @@
         </v-row>
         <v-row class="mb-8">
           <v-text class="font-weight-regular news-title"
-            >【NEWS】1stCD『瞳の奥に刺さる』2020年12月にミュージックビデオを公開！</v-text
+            >【NEWS】1stSingle『瞳の奥に刺さる』2020年12月にミュージックビデオを公開！</v-text
           >
         </v-row>
         <v-spacer></v-spacer>
         <v-row>
           <v-text class="font-weight-light">
-            自身初のパッケージ作品である1stCD『瞳の奥に刺さる』リリース日の
+            自身初のパッケージ作品である1stSingle『瞳の奥に刺さる』リリース日の
             <v-spacer></v-spacer>
             2020年12月に、本曲のミュージックビデオが博聖公式Youtubeにて公開されました！
             <br /><br />
@@ -44,7 +44,7 @@
             https://youtu.be/KH5rwXm8E64
             <br /><br />
 
-            ■■博聖ファーストCD『瞳の奥に刺さる』販売サイト一覧
+            ■■博聖ファーストSingle『瞳の奥に刺さる』販売サイト一覧
             <br /><br />
 
             https://lnk.to/nakimushi_CD/

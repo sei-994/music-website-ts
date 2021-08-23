@@ -115,7 +115,7 @@
               </v-col>
               <v-col lg="9">
                 <v-card-subtitle class="font-weight-light text-h6"
-                  >1st CD</v-card-subtitle
+                  >1st Single</v-card-subtitle
                 >
                 <v-card-text class="font-weight-regular text-h5"
                   >『瞳の奥に刺さる』</v-card-text
