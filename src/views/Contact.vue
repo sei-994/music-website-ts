@@ -115,7 +115,7 @@ export default {
       console.log(CORS_PROXY + url)
 
       setTimeout(() => {
-        window.location.href = "/thank"
+        window.location.href = "/home"
       }, 1000)
     },
   },
