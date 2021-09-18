@@ -5,44 +5,31 @@
         <v-row class="content__container-text"> </v-row>
       </v-container>
     </v-img>
-
-    <!-- <v-img src="../../public/images/home-main.jpg"></v-img> -->
-
-    <!-- <v-col cols="6">
-          <div class="mx-14">
-            <v-img
-              src="../../public/images/card.jpg"
-              height="330"
-              width="300"
-              class="grey darken-4"
-              contain
-            ></v-img>
-
-            <v-text
-              class="text-h5 teal--text text--accent-4 font-weight-regular"
-              >Cum sociis natoque penatibus et magnis dis <br />
-              parturient montes 2021.06.15 Digital Release
-            </v-text>
-          </div>
-        </v-col> -->
-
     <v-container class="d-flex flex-column">
       <div class="mx-lg-14 mx-xs-1">
         <v-row class="d-flex ma-15" justify-lg="center">
           <!-- <a href="https://big-up.style/musics/444605"> -->
           <v-col lg="5" class="main-card-box">
             <v-card class="mb-4 d-flex flex-column main-card-contents">
-              <v-img
+              <!-- <v-img
                 src="../../public/images/batch.png"
+                contain
+                class="grey darken-4"
+              ></v-img> -->
+              <v-img
+                src="../../public/images/single(2).jpg"
                 contain
                 class="grey darken-4"
               ></v-img>
 
-              <v-card-text class="font-weight-regular text-h5"
+              <!-- <v-card-text class="font-weight-regular text-h5"
                 >【RELEASE】<br />『瞳の奥に刺さる』</v-card-text
+              > -->
+              <v-card-text class="font-weight-regular text-h5"
+                >【RELEASE】<br />『君と紫煙』</v-card-text
               >
               <v-card-text class="font-weight-light"
-                >博聖の1st Single<br />が各配信サイトにてリリース！</v-card-text
+                >博聖の2nd Single<br />が各配信サイトにてリリース！</v-card-text
               >
             </v-card>
           </v-col>
@@ -50,13 +37,6 @@
           <!-- </a> -->
         </v-row>
       </div>
-      <!-- <v-text
-              class="text-h5 font-weight-regular red--text text--lighten-3"
-              >Cum sociis natoque penatibus et magnis dis parturient montes
-              2021.06.15 Digital Release
-            </v-text> -->
-      <!-- <div class="album-text-box"> -->
-      <!-- </div> -->
 
       <icon-bar></icon-bar>
 
@@ -67,26 +47,36 @@
             <v-text class="section-title-text">NEWS</v-text>
           </v-col>
 
-          <v-card @click="goNews" class="d-lg-flex" elevation="2" shaped tile>
+          <v-card
+            @click="goNewsDetail"
+            class="d-lg-flex"
+            elevation="2"
+            shaped
+            tile
+          >
             <v-col lg="3">
               <v-card-subtitle class="font-weight-light text-h6"
-                >2020.12</v-card-subtitle
+                >2021.9</v-card-subtitle
               >
             </v-col>
             <v-col lg="9">
               <v-card-text class="font-weight-regular text-h5"
-                >【RELEASE】『瞳の奥に刺さる』</v-card-text
+                >【RELEASE】『君と紫煙』</v-card-text
               >
               <v-card-text class="font-weight-light"
+                >博聖の2nd
+                Single『君と紫煙』が各配信サイトにてリ...</v-card-text
+              >
+              <!-- <v-card-text class="font-weight-light"
                 >博聖の1st
                 Single『瞳の奥に刺さる』が各配信サイトにてリ...</v-card-text
-              >
+              > -->
             </v-col>
           </v-card>
         </v-row>
         <v-row justify="center" class="mt-6 mb-15">
           <v-col cols="1">
-            <v-btn raised small text x-small @click="goNews">
+            <v-btn raised small text x-small @click="goNewsLibrary">
               <v-icon>mdi-arrow-right-circle-outline</v-icon> more</v-btn
             >
           </v-col>
@@ -211,10 +201,16 @@ export default {
     return {}
   },
   methods: {
-    goNews() {
+    goNewsDetail() {
       this.$router.push({
-        path: "/news",
-        name: "news",
+        path: "/newsdetail",
+        name: "newsdetail",
+      })
+    },
+    goNewsLibrary() {
+      this.$router.push({
+        path: "/newslibrary",
+        name: "newslibrary",
       })
     },
     goDisco() {

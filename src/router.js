@@ -13,10 +13,16 @@ export default new Router({
     },
 
     {
-      path: "/news",
-      name: "news",
+      path: "/newsdetail",
+      name: "newsdetail",
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/News.vue"),
+        import(/* webpackChunkName: "about" */ "./views/NewsDetail.vue"),
+    },
+    {
+      path: "/newslibrary",
+      name: "newslibrary",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/NewsLibrary.vue"),
     },
     {
       path: "/disco",
