@@ -27,10 +27,10 @@
           <v-text class="font-weight-light">
             自身初のパッケージ作品である2ndSingle『君と紫煙』リリース日の
             <v-spacer></v-spacer>
-            2021年9月12日にが解禁されました！
+            2021年9月12日に解禁されました！
             <br /><br />
             <br /><br />
-            今回の作品は斬新なピアノとギターが暴力的な旋律を奏る、前作とは異なるROCKな楽曲になっている。
+            今回の作品は斬新なピアノとギターが暴力的な旋律を奏る、前作とは異なるROCKな楽曲になっています。
             <br />
             <br />
             博聖 <br />
@@ -74,6 +74,20 @@
 import IconBar from "../components/IconBar.vue"
 export default {
   components: { IconBar },
+  props: {
+    id: Number,
+  },
+  data() {
+    return {
+      details: [
+        {
+          id: 1,
+          imgPath: "",
+          title: "",
+        },
+      ],
+    }
+  },
 }
 </script>
 

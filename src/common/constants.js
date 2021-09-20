@@ -5,8 +5,8 @@ export default {
       url: "#",
     },
     {
-      name: "news",
-      url: "../views/News.vue",
+      name: "newslibrary",
+      url: "../views/NewsLibrary.vue",
     },
     {
       name: "DISCO",

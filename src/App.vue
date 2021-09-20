@@ -1,16 +1,6 @@
 <template>
   <v-app>
     <transition name="menu">
-      <!-- <div class="menu" v-show="ActiveBtn">
-        <ul>
-          <li><a href="#">項目1</a></li>
-          <li><a href="#">項目2</a></li>
-          <li><a href="#">項目3</a></li>
-          <li><a href="#">項目4</a></li>
-          <li><a href="#">項目5</a></li>
-        </ul>
-      </div> -->
-      <!-- <v-dialog v-model="dialog" fullscreen class="d-flex justify-center"> -->
       <v-list
         class="menu"
         dark
@@ -98,8 +88,8 @@ export default {
       this.ActiveBtn = false
 
       this.$router.push({
-        path: "/news",
-        name: "news",
+        path: "/newslibrary",
+        name: "newslibrary",
       })
     },
     goDisco() {

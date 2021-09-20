@@ -30,9 +30,6 @@
                 class="scroll_area grey darken-4"
               ></v-img>
 
-              <!-- <v-card-text class="font-weight-regular text-h5"
-                >【RELEASE】<br />『瞳の奥に刺さる』</v-card-text
-              > -->
               <v-card-text class="font-weight-regular text-h5"
                 >【RELEASE】<br />『君と紫煙』</v-card-text
               >
