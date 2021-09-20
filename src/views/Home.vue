@@ -51,35 +51,36 @@
         class="scroll_area"
       >
         <div class="ma-lg-14">
-          <v-row justify-lg="around" justify-md="center" justify-sm="center">
+          <v-row class="d-flex space-space-between">
             <v-col lg="4">
               <v-text class="section-title-text">NEWS</v-text>
             </v-col>
-
-            <v-card
-              @click="goNewsDetail"
-              class="d-lg-flex"
-              elevation="2"
-              outlined
-              tile
-              width="100%"
-              height="100%"
-            >
-              <v-col lg="3">
-                <v-card-subtitle class="font-weight-light text-h6"
-                  >2021.9</v-card-subtitle
-                >
-              </v-col>
-              <v-col lg="9">
-                <v-card-text class="font-weight-regular text-h5"
-                  >【RELEASE】『君と紫煙』</v-card-text
-                >
-                <v-card-text class="font-weight-light"
-                  >博聖の2nd
-                  Single『君と紫煙』が各配信サイトにてリ...</v-card-text
-                >
-              </v-col>
-            </v-card>
+            <v-col lg="8">
+              <v-card
+                @click="goNewsDetail"
+                class="d-lg-flex"
+                elevation="2"
+                outlined
+                tile
+                width="100%"
+                height="100%"
+              >
+                <v-col lg="3">
+                  <v-card-subtitle class="font-weight-light text-h6"
+                    >2021.9</v-card-subtitle
+                  >
+                </v-col>
+                <v-col lg="9">
+                  <v-card-text class="font-weight-regular text-h5"
+                    >【RELEASE】『君と紫煙』</v-card-text
+                  >
+                  <v-card-text class="font-weight-light"
+                    >博聖の2nd
+                    Single『君と紫煙』が各配信サイトにてリ...</v-card-text
+                  >
+                </v-col>
+              </v-card>
+            </v-col>
           </v-row>
           <v-row justify="center" class="mt-6 mb-15">
             <v-col cols="3">
