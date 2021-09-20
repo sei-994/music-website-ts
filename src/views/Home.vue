@@ -155,7 +155,7 @@
         class="scroll_area"
       >
         <div class="news--box ma-14">
-          <v-row justify="left">
+          <v-row>
             <v-col cols="4">
               <v-text class="section-title-text">VIDEO</v-text>
             </v-col>
@@ -172,13 +172,6 @@
               ></iframe>
             </v-container>
           </v-row>
-          <!-- <v-row justify="center" class="mt-6 mb-15">
-          <v-col cols="1">
-            <v-btn raised small text x-small class="">
-              <v-icon>mdi-arrow-right-circle-outline</v-icon> more</v-btn
-            >
-          </v-col>
-        </v-row> -->
         </div>
       </div>
       <!-- CONTACT -->
@@ -241,33 +234,33 @@ export default {
     }
   },
   methods: {
-    visibilityChanged01(isVisible01, entry) {
+    visibilityChanged01(isVisible01) {
       this.isVisible01 = isVisible01
-      console.log(entry)
+      console.log()
     },
-    visibilityChanged02(isVisible02, entry) {
+    visibilityChanged02(isVisible02) {
       this.isVisible02 = isVisible02
-      console.log(entry)
+      console.log()
     },
-    visibilityChanged03(isVisible03, entry) {
+    visibilityChanged03(isVisible03) {
       this.isVisible03 = isVisible03
-      console.log(entry)
+      console.log()
     },
-    visibilityChanged04(isVisible04, entry) {
+    visibilityChanged04(isVisible04) {
       this.isVisible04 = isVisible04
-      console.log(entry)
+      console.log()
     },
-    visibilityChanged05(isVisible05, entry) {
+    visibilityChanged05(isVisible05) {
       this.isVisible05 = isVisible05
-      console.log(entry)
+      console.log()
     },
-    visibilityChanged06(isVisible06, entry) {
+    visibilityChanged06(isVisible06) {
       this.isVisible06 = isVisible06
-      console.log(entry)
+      console.log()
     },
-    visibilityChanged07(isVisible07, entry) {
+    visibilityChanged07(isVisible07) {
       this.isVisible04 = isVisible07
-      console.log(entry)
+      console.log()
     },
     goNewsDetail() {
       this.$router.push({

@@ -33,7 +33,7 @@
     <v-main>
       <v-app-bar app light class="app-bar">
         <v-toolbar-title></v-toolbar-title>
-        <v-app-bar-nav-icon
+        <v-app-bar-nav-icon @click="goHome"
           ><img src="../public/images/macaron.png" alt="" width="40"
         /></v-app-bar-nav-icon>
         <v-spacer></v-spacer>
