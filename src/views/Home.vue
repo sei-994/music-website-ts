@@ -17,11 +17,6 @@
           <!-- <a href="https://big-up.style/musics/444605"> -->
           <v-col lg="5" class="main-card-box">
             <v-card class="mb-4 d-flex flex-column main-card-contents">
-              <!-- <v-img
-                src="../../public/images/batch.png"
-                contain
-                class="grey darken-4"
-              ></v-img> -->
               <v-img
                 src="../../public/images/single2.png"
                 contain
@@ -56,7 +51,7 @@
         class="scroll_area"
       >
         <div class="ma-lg-14">
-          <v-row justify-lg="around">
+          <v-row justify-lg="around" justify-md="center" justify-sm="center">
             <v-col lg="4">
               <v-text class="section-title-text">NEWS</v-text>
             </v-col>
@@ -65,8 +60,10 @@
               @click="goNewsDetail"
               class="d-lg-flex"
               elevation="2"
-              shaped
+              outlined
               tile
+              width="100%"
+              height="100%"
             >
               <v-col lg="3">
                 <v-card-subtitle class="font-weight-light text-h6"
@@ -81,15 +78,11 @@
                   >博聖の2nd
                   Single『君と紫煙』が各配信サイトにてリ...</v-card-text
                 >
-                <!-- <v-card-text class="font-weight-light"
-                >博聖の1st
-                Single『瞳の奥に刺さる』が各配信サイトにてリ...</v-card-text
-              > -->
               </v-col>
             </v-card>
           </v-row>
           <v-row justify="center" class="mt-6 mb-15">
-            <v-col cols="1">
+            <v-col cols="3">
               <v-btn raised small text x-small @click="goNewsLibrary">
                 <v-icon>mdi-arrow-right-circle-outline</v-icon> more</v-btn
               >
@@ -104,7 +97,7 @@
         class="scroll_area"
       >
         <div class="ma-lg-14">
-          <v-row justify-lg="around">
+          <v-row>
             <v-col lg="4">
               <v-text class="section-title-text">DISCO</v-text>
             </v-col>
@@ -139,7 +132,7 @@
             </v-col>
           </v-row>
           <v-row justify="center" class="mt-6 mb-15">
-            <v-col cols="1">
+            <v-col cols="3">
               <v-btn raised small text x-small @click="goDisco">
                 <v-icon>mdi-arrow-right-circle-outline</v-icon> more</v-btn
               >
@@ -194,16 +187,9 @@
               ></v-img>
             </v-card>
           </v-row>
-          <!-- <v-row justify="center"> -->
-          <!-- <v-card-text class="font-weight-light contact-text">
-            世紀末生まれのアーティスト。<br />
-            海外で東京藝術大学卒業のピアニストに師事をし、帰国後小学6年生からピアノで作曲を始める。<br />
-            クラシックやジャズ、ロック、ボーカロイドなど様々なジャンルの音楽の影響を受けており、<br />
-            繊細で時に暴力的なピアノと爽快なギターを軸に、エモーショナルなサウンドを内包した芸術性の高い音楽を作曲する。</v-card-text
-          > -->
-          <!-- </v-row> -->
+
           <v-row justify="center" class="mt-3 mb-15 mr-9">
-            <v-col cols="1">
+            <v-col cols="3" lg="1" sm="2">
               <v-btn raised small text x-small @click="goContact">
                 <v-icon>mdi-arrow-right-circle-outline</v-icon>contact</v-btn
               >
@@ -219,9 +205,7 @@
 import IconBar from "../components/IconBar.vue"
 export default {
   name: "home",
-
   components: { IconBar },
-
   data() {
     return {
       isVisible01: false,
@@ -236,36 +220,29 @@ export default {
   methods: {
     visibilityChanged01(isVisible01) {
       this.isVisible01 = isVisible01
-      console.log()
     },
     visibilityChanged02(isVisible02) {
       this.isVisible02 = isVisible02
-      console.log()
     },
     visibilityChanged03(isVisible03) {
       this.isVisible03 = isVisible03
-      console.log()
     },
     visibilityChanged04(isVisible04) {
       this.isVisible04 = isVisible04
-      console.log()
     },
     visibilityChanged05(isVisible05) {
       this.isVisible05 = isVisible05
-      console.log()
     },
     visibilityChanged06(isVisible06) {
       this.isVisible06 = isVisible06
-      console.log()
     },
     visibilityChanged07(isVisible07) {
       this.isVisible04 = isVisible07
-      console.log()
     },
     goNewsDetail() {
       this.$router.push({
-        path: "/newsdetail",
-        name: "newsdetail",
+        path: "/newslibrary",
+        name: "newslibrary",
       })
     },
     goNewsLibrary() {

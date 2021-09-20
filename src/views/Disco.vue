@@ -3,7 +3,13 @@
     <v-container class="d-flex flex-column mt-8" justify="center">
       <!-- DISCO -->
       <v-row justify-lg="center" class="ma-5">
-        <v-card max-width="700" max-height="700" class="disco-img-box">
+        <v-card
+          max-width="700"
+          max-height="700"
+          class="disco-img-box scroll_area"
+          v-observe-visibility="visibilityChanged01"
+          v-bind:class="{ fadeinactive: isVisible01 }"
+        >
           <v-img
             src="../../public/images/博聖さまアイコン正面.jpg"
             class="disco-img"
@@ -11,7 +17,11 @@
         </v-card>
       </v-row>
 
-      <div class="ma-lg-14">
+      <div
+        class="ma-lg-14 scroll_area"
+        v-observe-visibility="visibilityChanged02"
+        v-bind:class="{ fadeinactive: isVisible02 }"
+      >
         <v-row justify-lg="around">
           <v-text class="section-title-text mb-8">DISCO</v-text>
           <v-col lg="4"> </v-col>
@@ -87,6 +97,20 @@
 import IconBar from "../components/IconBar.vue"
 export default {
   components: { IconBar },
+  data() {
+    return {
+      isVisible01: false,
+      isVisible02: false,
+    }
+  },
+  methods: {
+    visibilityChanged01(isVisible01) {
+      this.isVisible01 = isVisible01
+    },
+    visibilityChanged02(isVisible02) {
+      this.isVisible02 = isVisible02
+    },
+  },
 }
 </script>
 

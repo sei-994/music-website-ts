@@ -10,6 +10,8 @@
               :key="index"
               class="mt-8"
               @click="goDetail(card.id)"
+              outlined
+              tile
             >
               <v-col lg="3">
                 <v-card-subtitle class="font-weight-light text-h6">{{

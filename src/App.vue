@@ -123,7 +123,9 @@ export default {
   font-family: "Noto Serif JP", serif;
   font-weight: light;
 }
-
+.container {
+  padding: 0;
+}
 .icon--box {
   display: flex;
   justify-content: center;
