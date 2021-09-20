@@ -23,7 +23,7 @@
                 class="grey darken-4"
               ></v-img> -->
               <v-img
-                src="../../public/images/single(2).jpg"
+                src="../../public/images/single2.png"
                 contain
                 v-observe-visibility="visibilityChanged02"
                 v-bind:class="{ fadeinactive: isVisible02 }"

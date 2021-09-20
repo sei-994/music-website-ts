@@ -86,7 +86,6 @@ export default {
     },
     goNews() {
       this.ActiveBtn = false
-
       this.$router.push({
         path: "/newslibrary",
         name: "newslibrary",

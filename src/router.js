@@ -19,6 +19,8 @@ export default new Router({
         import(/* webpackChunkName: "about" */ "./views/NewsDetail.vue"),
       props: (route) => ({
         id: route.params.id,
+        singleTitle: route.params.singleTitle,
+        date: route.params.date,
       }),
     },
     {

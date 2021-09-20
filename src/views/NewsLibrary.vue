@@ -19,7 +19,7 @@
           </v-col>
           <v-col lg="9">
             <v-card-text class="font-weight-regular text-h5"
-              >【RELEASE】{{ card.title }}</v-card-text
+              >【RELEASE】{{ card.singleTitle }}</v-card-text
             >
             <v-card-text class="font-weight-light">{{ card.text }}</v-card-text>
           </v-col>
@@ -36,13 +36,13 @@ export default {
         {
           id: 1,
           date: "2020.12",
-          title: "『瞳の奥に刺さる』",
+          singleTitle: "『瞳の奥に刺さる』",
           text: "博聖の1stSingle『瞳の奥に刺さる』が各配信サイトにてリ...",
         },
         {
           id: 2,
           date: "2021.9",
-          title: "『君と紫煙』",
+          singleTitle: "『君と紫煙』",
           text: "博聖の2ndSingle『君と紫煙』が各配信サイトにてリ...",
         },
       ],
@@ -52,7 +52,11 @@ export default {
     goDetail(cardId) {
       this.$router.push({
         name: "newsdetail",
-        params: { id: cardId },
+        params: {
+          id: cardId - 1,
+          singleTitle: this.cards[cardId - 1].singleTitle,
+          date: this.cards[cardId - 1].date,
+        },
       })
     },
   },
