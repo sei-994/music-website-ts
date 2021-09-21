@@ -16,22 +16,28 @@
         <v-row class="d-flex ma-15" justify-lg="center">
           <!-- <a href="https://big-up.style/musics/444605"> -->
           <v-col lg="5" class="main-card-box">
-            <v-card class="mb-4 d-flex flex-column main-card-contents">
-              <v-img
-                src="../../public/images/single2.png"
-                contain
-                v-observe-visibility="visibilityChanged02"
-                v-bind:class="{ fadeinactive: isVisible02 }"
-                class="scroll_area grey darken-4"
-              ></v-img>
+            <v-hover v-slot="{ hover }">
+              <v-card
+                @click="goNewsDetail"
+                class="mb-4 d-flex flex-column main-card-contents"
+                :class="`${hover ? 'hover_true' : 'not_hover'}`"
+              >
+                <v-img
+                  src="../../public/images/single2.png"
+                  contain
+                  v-observe-visibility="visibilityChanged02"
+                  v-bind:class="{ fadeinactive: isVisible02 }"
+                  class="scroll_area grey darken-4"
+                ></v-img>
 
-              <v-card-text class="font-weight-regular text-h5"
-                >【RELEASE】<br />『君と紫煙』</v-card-text
-              >
-              <v-card-text class="font-weight-light"
-                >博聖の2nd Single<br />が各配信サイトにてリリース！</v-card-text
-              >
-            </v-card>
+                <v-card-text class="font-weight-regular text-h5"
+                  >【RELEASE】<br />『君と紫煙』</v-card-text
+                >
+                <v-card-text class="font-weight-light"
+                  >博聖の2nd Single<br />が各配信サイトにてリリース！</v-card-text
+                >
+              </v-card>
+            </v-hover>
           </v-col>
 
           <!-- </a> -->
@@ -51,35 +57,38 @@
         class="scroll_area"
       >
         <div class="ma-lg-14">
-          <v-row class="d-flex space-space-between">
+          <v-row>
             <v-col lg="4">
               <v-text class="section-title-text">NEWS</v-text>
             </v-col>
             <v-col lg="8">
-              <v-card
-                @click="goNewsDetail"
-                class="d-lg-flex"
-                elevation="2"
-                outlined
-                tile
-                width="100%"
-                height="100%"
-              >
-                <v-col lg="3">
-                  <v-card-subtitle class="font-weight-light text-h6"
-                    >2021.9</v-card-subtitle
-                  >
-                </v-col>
-                <v-col lg="9">
-                  <v-card-text class="font-weight-regular text-h5"
-                    >【RELEASE】『君と紫煙』</v-card-text
-                  >
-                  <v-card-text class="font-weight-light"
-                    >博聖の2nd
-                    Single『君と紫煙』が各配信サイトにてリ...</v-card-text
-                  >
-                </v-col>
-              </v-card>
+              <v-hover v-slot="{ hover }">
+                <v-card
+                  @click="goNewsDetail"
+                  class="d-lg-flex justify-center"
+                  elevation="2"
+                  outlined
+                  tile
+                  width="100%"
+                  height="100%"
+                  :class="`${hover ? 'hover_true' : 'not_hover'}`"
+                >
+                  <v-col lg="3">
+                    <v-card-subtitle class="font-weight-light text-h6"
+                      >2021.9</v-card-subtitle
+                    >
+                  </v-col>
+                  <v-col lg="9">
+                    <v-card-text class="font-weight-regular text-h5"
+                      >【RELEASE】『君と紫煙』</v-card-text
+                    >
+                    <v-card-text class="font-weight-light"
+                      >博聖の2nd
+                      Single『君と紫煙』が各配信サイトにてリ...</v-card-text
+                    >
+                  </v-col>
+                </v-card>
+              </v-hover>
             </v-col>
           </v-row>
           <v-row justify="center" class="mt-6 mb-15">
@@ -103,33 +112,36 @@
               <v-text class="section-title-text">DISCO</v-text>
             </v-col>
             <v-col lg="8">
-              <v-card
-                @click="goDisco"
-                class="d-lg-flex justify-center"
-                elevation="2"
-                shaped
-                tile
-              >
-                <v-col lg="3">
-                  <v-img
-                    src="../../public/images/博聖様アイコン横顔.jpg"
-                    width="100%"
-                    height="100%"
-                  ></v-img>
-                </v-col>
-                <v-col lg="9">
-                  <v-card-subtitle class="font-weight-light text-h6"
-                    >1st Single</v-card-subtitle
-                  >
-                  <v-card-text class="font-weight-regular text-h5"
-                    >『瞳の奥に刺さる』</v-card-text
-                  >
-                  <br /><br />
-                  <v-card-subtitle class="font-weight-light text-h6"
-                    >2020.12</v-card-subtitle
-                  >
-                </v-col>
-              </v-card>
+              <v-hover v-slot="{ hover }">
+                <v-card
+                  @click="goDisco"
+                  class="d-lg-flex justify-center"
+                  elevation="2"
+                  shaped
+                  tile
+                  :class="`${hover ? 'hover_true' : 'not_hover'}`"
+                >
+                  <v-col lg="3">
+                    <v-img
+                      src="../../public/images/single2.png"
+                      width="100%"
+                      height="100%"
+                    ></v-img>
+                  </v-col>
+                  <v-col lg="9">
+                    <v-card-subtitle class="font-weight-light text-h6"
+                      >2nd Single</v-card-subtitle
+                    >
+                    <v-card-text class="font-weight-regular text-h5"
+                      >『君と紫煙』</v-card-text
+                    >
+                    <br /><br />
+                    <v-card-subtitle class="font-weight-light text-h6"
+                      >2021.9</v-card-subtitle
+                    >
+                  </v-col>
+                </v-card>
+              </v-hover>
             </v-col>
           </v-row>
           <v-row justify="center" class="mt-6 mb-15">
@@ -143,14 +155,15 @@
       </div>
 
       <!-- VIDEO -->
-      <div
-        v-observe-visibility="visibilityChanged05"
-        v-bind:class="{ fadeinactive: isVisible05 }"
-        class="scroll_area"
-      >
-        <div class="news--box ma-14">
+      <div>
+        <div class="my-14 ml-lg-14">
           <v-row>
-            <v-col cols="4">
+            <v-col
+              cols="4"
+              v-observe-visibility="visibilityChanged06"
+              v-bind:class="{ fadeinactive: isVisible06 }"
+              class="scroll_area"
+            >
               <v-text class="section-title-text">VIDEO</v-text>
             </v-col>
             <v-container class="iframeWrapper">
@@ -170,11 +183,11 @@
       </div>
       <!-- CONTACT -->
       <div
-        v-observe-visibility="visibilityChanged05"
-        v-bind:class="{ fadeinactive: isVisible05 }"
+        v-observe-visibility="visibilityChanged07"
+        :class="{ fadeinactive: isVisible07 }"
         class="scroll_area"
       >
-        <div class="news--box ma-14">
+        <div class="my-14 ml-lg-14">
           <v-row justify="around">
             <v-col cols="4">
               <v-text class="section-title-text">CONTACT</v-text>
@@ -238,12 +251,15 @@ export default {
       this.isVisible06 = isVisible06
     },
     visibilityChanged07(isVisible07) {
-      this.isVisible04 = isVisible07
+      this.isVisible07 = isVisible07
     },
     goNewsDetail() {
       this.$router.push({
-        path: "/newslibrary",
-        name: "newslibrary",
+        path: "/newsdetail",
+        name: "newsdetail",
+        params: {
+          id: 1,
+        },
       })
     },
     goNewsLibrary() {

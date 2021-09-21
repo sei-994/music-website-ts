@@ -58,25 +58,15 @@
   </v-app>
 </template>
 <script>
-// import constants from "./common/constants"
-
 export default {
   name: "app",
   data() {
     return {
       ActiveBtn: false,
-      // dialog: false,
-      // menuItems: constants.menuItems,
       mainImage: "../public/images/home-main.jpg",
     }
   },
   methods: {
-    // TODO：外部サイト遷移→aタグでくくるorwindow.location.hrefで遷移
-    // goTwitter() {
-    //   const url = "https://twitter.com/hiromasa_eve"
-    //   console.log(this)
-    //   window.location = url
-    // },
     goHome() {
       this.ActiveBtn = false
       this.$router.push({
@@ -125,6 +115,7 @@ export default {
 }
 .container {
   padding: 0;
+  width: 100%;
 }
 .icon--box {
   display: flex;
@@ -223,5 +214,12 @@ export default {
 .menu ul {
   margin: 1rem;
   padding: 0;
+}
+.hover_true {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.not_hover {
+  opacity: 1;
 }
 </style>

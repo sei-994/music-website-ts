@@ -4,15 +4,17 @@
       <!-- DISCO -->
       <v-row justify-lg="center" class="ma-5">
         <v-card
-          max-width="700"
-          max-height="700"
+          max-width="100%"
+          max-height="200px"
           class="disco-img-box scroll_area"
           v-observe-visibility="visibilityChanged01"
-          v-bind:class="{ fadeinactive: isVisible01 }"
+          :class="{ fadeinactive: isVisible01 }"
         >
           <v-img
             src="../../public/images/博聖さまアイコン正面.jpg"
             class="disco-img"
+            height="100%"
+            width="100%"
           ></v-img>
         </v-card>
       </v-row>
@@ -28,29 +30,32 @@
           <v-layout wrap lg="8" justify-space-around>
             <v-flex xs12 sm9 md8 lg5>
               <v-card
-                @click="goDisco"
                 class="d-lg-flex justify-center"
                 elevation="2"
                 shaped
                 tile
               >
-                <v-col lg="5">
+                <v-col lg="4">
                   <v-img
                     src="../../public/images/single.png"
                     width="100%"
                     height="100%"
                   ></v-img>
                 </v-col>
-                <v-col lg="7">
-                  <v-card-subtitle class="font-weight-light text-h6"
-                    >1st Single</v-card-subtitle
+                <v-col lg="8">
+                  <v-card-text class="font-weight-light text-h6"
+                    >1st Single</v-card-text
                   >
-                  <v-card-text class="font-weight-regular text-h6"
+                  <v-card-text class="font-weight-regular text-h5"
                     >『瞳の奥に刺さる』</v-card-text
                   >
-                  <br /><br />
-                  <v-card-subtitle class="font-weight-light text-h6"
-                    >2020.12</v-card-subtitle
+                  <v-card-text class="font-weight-light text-h6"
+                    >2020.12</v-card-text
+                  >
+                  <br />
+
+                  <v-card-text class="font-weight-regular text-h5"
+                    ><a>https://linkco.re/v0QDdD3S?lang=ja</a></v-card-text
                   >
                 </v-col>
               </v-card>
@@ -58,7 +63,6 @@
             <v-flex xs12 sm9 md8 lg5>
               <v-card
                 lg7
-                @click="goDisco"
                 class="d-lg-flex justify-center"
                 elevation="2"
                 shaped
@@ -72,15 +76,21 @@
                   ></v-img>
                 </v-col>
                 <v-col lg="7">
-                  <v-card-subtitle class="font-weight-light text-h6"
-                    >2nd Single</v-card-subtitle
+                  <v-card-text class="font-weight-light text-h6"
+                    >2nd Single</v-card-text
                   >
                   <v-card-text class="font-weight-regular text-h6"
                     >『君と紫煙』</v-card-text
                   >
-                  <br /><br />
-                  <v-card-subtitle class="font-weight-light text-h6"
-                    >2021.9</v-card-subtitle
+                  <v-card-text class="font-weight-light text-h6"
+                    >2021.9</v-card-text
+                  >
+
+                  <br />
+                  <v-card-text class="font-weight-regular text-h5"
+                    ><a :href="disco2"
+                      >https://linkco.re/v0QDdD3S?lang=ja</a
+                    ></v-card-text
                   >
                 </v-col>
               </v-card>
@@ -101,6 +111,7 @@ export default {
     return {
       isVisible01: false,
       isVisible02: false,
+      disco2: "https://linkco.re/v0QDdD3S?lang=ja",
     }
   },
   methods: {
@@ -114,21 +125,27 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .news-title {
   font-size: 2.5rem;
 }
-.disco-img-box {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-top: 50%;
+
+.hover_true {
+  opacity: 0.5;
+  cursor: pointer;
 }
-.disco-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.not_hover {
+  opacity: 1;
+}
+a {
+  color: gray;
+  font-size: 0.7rem;
+  &:hover {
+    opacity: 0.7;
+    border-bottom: 1px gray solid;
+  }
+}
+.v-card__text {
+  padding: 0.5rem;
 }
 </style>
