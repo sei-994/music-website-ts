@@ -34,6 +34,8 @@
                 elevation="2"
                 shaped
                 tile
+                height="100%"
+                width="100%"
               >
                 <v-col lg="4">
                   <v-img
@@ -43,8 +45,8 @@
                   ></v-img>
                 </v-col>
                 <v-col lg="8">
-                  <v-card-text class="font-weight-light text-h6"
-                    >1st Single</v-card-text
+                  <v-card-text class="font-weight-light text-h6">
+                    1st Single</v-card-text
                   >
                   <v-card-text class="font-weight-regular text-h5"
                     >『瞳の奥に刺さる』</v-card-text
@@ -55,7 +57,14 @@
                   <br />
 
                   <v-card-text class="font-weight-regular text-h5"
-                    ><a>https://linkco.re/v0QDdD3S?lang=ja</a></v-card-text
+                    ><a :href="disco1">
+                      <v-img
+                        width="10px"
+                        height="10px"
+                        src="../../public/images/macaron.png"
+                      ></v-img>
+                      https://big-up.style/musics</a
+                    ></v-card-text
                   >
                 </v-col>
               </v-card>
@@ -88,9 +97,7 @@
 
                   <br />
                   <v-card-text class="font-weight-regular text-h5"
-                    ><a :href="disco2"
-                      >https://linkco.re/v0QDdD3S?lang=ja</a
-                    ></v-card-text
+                    ><a :href="disco2">https://linkco.re/</a></v-card-text
                   >
                 </v-col>
               </v-card>
@@ -111,6 +118,7 @@ export default {
     return {
       isVisible01: false,
       isVisible02: false,
+      disco1: "https://big-up.style/musics/444605",
       disco2: "https://linkco.re/v0QDdD3S?lang=ja",
     }
   },
