@@ -109,10 +109,30 @@ export default {
 }
 </script>
 <style lang="scss">
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
 * {
   font-family: "Noto Serif JP", serif;
   font-weight: light;
 }
+
 .container {
   padding: 0;
   width: 100%;

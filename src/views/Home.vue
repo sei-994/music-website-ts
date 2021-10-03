@@ -166,18 +166,18 @@
             >
               <v-text class="section-title-text">VIDEO</v-text>
             </v-col>
-            <v-container class="iframeWrapper">
+            <v-row justify="center" class="iframeWrapper">
               <iframe
                 class="mt-8"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/_Y6EGkUOR00"
+                src="https://www.youtube.com/embed/gqYbBzhi2vs"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-            </v-container>
+            </v-row>
           </v-row>
         </div>
       </div>
@@ -284,6 +284,25 @@ export default {
 }
 </script>
 <style lang="scss">
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
 .content__ {
   &container- {
     &text {
@@ -329,18 +348,27 @@ a {
 }
 
 .iframeWrapper {
-  position: relative;
   width: 100%;
-  height: 0;
-  padding-top: 60%;
+
+  margin: 0 auto;
 }
 
 .iframeWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  min-width: 50rem;
+  max-width: 100%;
+  min-height: 31rem;
+  @include tab {
+    max-width: 90%;
+
+    min-height: 25rem;
+    min-width: 34rem;
+  }
+  @include sp {
+    max-width: 90%;
+
+    min-height: 10rem;
+    min-width: 15rem;
+  }
 }
 
 /*下からフェードイン*/
