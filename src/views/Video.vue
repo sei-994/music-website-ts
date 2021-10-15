@@ -41,6 +41,9 @@ export default {
         {
           src: "https://www.youtube.com/embed/gqYbBzhi2vs",
         },
+        {
+          src: "https://www.youtube.com/embed/BBpBQhx4GMs",
+        },
       ],
     }
   },
