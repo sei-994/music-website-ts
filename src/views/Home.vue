@@ -181,6 +181,41 @@
           </v-row>
         </div>
       </div>
+      <!-- STORE -->
+      <div
+        v-observe-visibility="visibilityChanged05"
+        v-bind:class="{ fadeinactive: isVisible05 }"
+        class="scroll_area"
+      >
+        <div class="ma-lg-14">
+          <v-row>
+            <v-col lg="4">
+              <v-text class="section-title-text">STORE</v-text>
+            </v-col>
+            <v-col lg="8">
+              <v-hover v-slot="{ hover }">
+                <a :href="storeUrl">
+                  <v-img
+                    max-width="400"
+                    max-height="400"
+                    src="../../public/images/store_logo.svg"
+                    :class="`${hover ? 'hover_true' : 'not_hover'}`"
+                  ></v-img>
+                </a>
+              </v-hover>
+            </v-col>
+          </v-row>
+          <v-row justify="center" class="mt-6 mb-15">
+            <v-col cols="3">
+              <a :href="storeUrl">
+                <v-btn raised small text x-small>
+                  <v-icon>mdi-arrow-right-circle-outline</v-icon> more</v-btn
+                >
+              </a>
+            </v-col>
+          </v-row>
+        </div>
+      </div>
       <!-- CONTACT -->
       <div
         v-observe-visibility="visibilityChanged07"
@@ -229,6 +264,7 @@ export default {
       isVisible05: false,
       isVisible06: false,
       isVisible07: false,
+      storeUrl: "https://hiromasa-eve.booth.pm/",
     }
   },
   methods: {

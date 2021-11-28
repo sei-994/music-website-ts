@@ -22,6 +22,13 @@
           <v-list-item @click="goVideo">
             <v-list-item-title class="v-list-title">VIDEO</v-list-item-title>
           </v-list-item>
+          <a :href="storeUrl">
+            <v-list-item>
+              <v-list-item-title class="v-list-title">
+                STORE
+              </v-list-item-title>
+            </v-list-item>
+          </a>
 
           <v-list-item @click="goContact">
             <v-list-item-title class="v-list-title">CONTACT</v-list-item-title>
@@ -64,6 +71,7 @@ export default {
     return {
       ActiveBtn: false,
       mainImage: "../public/images/home-main.jpg",
+      storeUrl: "https://hiromasa-eve.booth.pm/",
     }
   },
   methods: {

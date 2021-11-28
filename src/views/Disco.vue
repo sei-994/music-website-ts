@@ -58,11 +58,6 @@
 
                   <v-card-text class="font-weight-regular text-h5"
                     ><a :href="disco1">
-                      <v-img
-                        width="10px"
-                        height="10px"
-                        src="../../public/images/macaron.png"
-                      ></v-img>
                       https://big-up.style/musics</a
                     ></v-card-text
                   >
