@@ -36,6 +36,9 @@ export default {
     return {
       items: [
         {
+          src: "https://www.youtube-nocookie.com/embed/GK0ajL3ietY",
+        },
+        {
           src: "https://www.youtube.com/embed/_Y6EGkUOR00",
         },
         {

@@ -2,9 +2,9 @@
   <v-app>
     <v-container class="mt-8" justify="center">
       <!-- NEWS -->
-      <v-row justify="center" class="mb-5 d-flex">
-        <v-layout wrap justify-space-between flex-column>
-          <v-flex>
+      <v-row justify="center" class="mb-5">
+        <v-layout>
+          <v-flex d-flex justify-space-between flex-column-reverse>
             <v-card
               v-for="(card, index) in cards"
               :key="index"
@@ -49,6 +49,12 @@ export default {
           date: "2021.9",
           singleTitle: "『君と紫煙』",
           text: "博聖の2ndSingle『君と紫煙』が各配信サイトにてリ...",
+        },
+        {
+          id: 3,
+          date: "2022.1",
+          singleTitle: "『君を穿つ』",
+          text: "博聖の3rdSingle『君を穿つ』が各配信サイトにてリ...",
         },
       ],
     }

@@ -10,11 +10,10 @@
         <v-row class="content__container-text"> </v-row>
       </v-container>
     </v-img>
-
+    <div id="p5Canvas"></div>
     <v-container class="d-flex flex-column">
       <div class="mx-lg-14 mx-xs-1">
         <v-row class="d-flex ma-15" justify-lg="center">
-          <!-- <a href="https://big-up.style/musics/444605"> -->
           <v-col lg="5" class="main-card-box">
             <v-hover v-slot="{ hover }">
               <v-card
@@ -23,7 +22,7 @@
                 :class="`${hover ? 'hover_true' : 'not_hover'}`"
               >
                 <v-img
-                  src="../../public/images/single2.png"
+                  src="../../public/images/single3.jpg"
                   contain
                   v-observe-visibility="visibilityChanged02"
                   v-bind:class="{ fadeinactive: isVisible02 }"
@@ -31,10 +30,10 @@
                 ></v-img>
 
                 <v-card-text class="font-weight-regular text-h5"
-                  >【RELEASE】<br />『君と紫煙』</v-card-text
+                  >【RELEASE】<br />『君を穿つ』</v-card-text
                 >
                 <v-card-text class="font-weight-light"
-                  >博聖の2nd Single<br />が各配信サイトにてリリース！</v-card-text
+                  >博聖の3rd Single<br />が各配信サイトにてリリース！</v-card-text
                 >
               </v-card>
             </v-hover>
@@ -75,16 +74,16 @@
                 >
                   <v-col lg="3">
                     <v-card-subtitle class="font-weight-light text-h6"
-                      >2021.9</v-card-subtitle
+                      >2022.1</v-card-subtitle
                     >
                   </v-col>
                   <v-col lg="9">
                     <v-card-text class="font-weight-regular text-h5"
-                      >【RELEASE】『君と紫煙』</v-card-text
+                      >【RELEASE】『君を穿つ』</v-card-text
                     >
                     <v-card-text class="font-weight-light"
-                      >博聖の2nd
-                      Single『君と紫煙』が各配信サイトにてリ...</v-card-text
+                      >博聖の3rd
+                      Single『君を穿つ』が各配信サイトにてリ...</v-card-text
                     >
                   </v-col>
                 </v-card>
@@ -123,7 +122,7 @@
                 >
                   <v-col lg="3">
                     <v-img
-                      src="../../public/images/single2.png"
+                      src="../../public/images/single3.jpg"
                       width="100%"
                       height="100%"
                     ></v-img>
@@ -133,11 +132,11 @@
                       >2nd Single</v-card-subtitle
                     >
                     <v-card-text class="font-weight-regular text-h5"
-                      >『君と紫煙』</v-card-text
+                      >『君を穿つ』</v-card-text
                     >
                     <br /><br />
                     <v-card-subtitle class="font-weight-light text-h6"
-                      >2021.9</v-card-subtitle
+                      >2022.1</v-card-subtitle
                     >
                   </v-col>
                 </v-card>
@@ -171,7 +170,7 @@
                 class="mt-8"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/gqYbBzhi2vs"
+                src="https://www.youtube-nocookie.com/embed/GK0ajL3ietY"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -267,6 +266,38 @@ export default {
       storeUrl: "https://hiromasa-eve.booth.pm/",
     }
   },
+  // mounted() {
+  //   const script = function (p5) {
+  //     // var speed = 2
+  //     // var posX = 0
+  //     p5.setup = () => {
+  //       // p5.createCanvas(500, 500)
+  //       let canvas = p5.createCanvas(window.outerWidth, window.outerHeight)
+  //       canvas.parent("p5Canvas")
+  //       // p5.ellipse(p5.width / 2, p5.height / 2, 500, 500)
+  //     }
+
+  //     p5.draw = (_) => {
+  //       // _.point(50, 50)
+  //       _.line(10, 10, 200, 180)
+  //       // p5.background(0)
+  //       // const degree = p5.frameCount * 3
+  //       // const y = p5.sin(p5.radians(degree)) * 50
+  //       // p5.push()
+  //       // p5.translate(0, p5.height / 2)
+  //       // p5.ellipse(posX, y, 50, 50)
+  //       // p5.pop()
+
+  //       // posX += speed
+  //       // if (posX > p5.width || posX < 0) {
+  //       //   speed *= -1
+  //       // }
+  //     }
+  //   }
+
+  //   const P5 = require("p5")
+  //   new P5(script)
+  // },
   methods: {
     visibilityChanged01(isVisible01) {
       this.isVisible01 = isVisible01
@@ -294,7 +325,7 @@ export default {
         path: "/newsdetail",
         name: "newsdetail",
         params: {
-          id: 1,
+          id: 2, //遷移先設定
         },
       })
     },

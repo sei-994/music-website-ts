@@ -27,10 +27,16 @@
         <v-row justify-lg="around">
           <v-text class="section-title-text mb-8">DISCO</v-text>
           <v-col lg="4"> </v-col>
-          <v-layout wrap lg="8" justify-space-around>
-            <v-flex xs12 sm9 md8 lg5>
+          <v-layout
+            wrap
+            lg="8"
+            justify-lg-space-between
+            justify-space-around
+            flex-wrap
+          >
+            <v-flex xs12 sm9 md8 lg5 align-self-center>
               <v-card
-                class="d-lg-flex justify-center"
+                class="d-lg-flex justify-center mb-4"
                 elevation="2"
                 shaped
                 tile
@@ -97,6 +103,39 @@
                 </v-col>
               </v-card>
             </v-flex>
+            <v-flex xs12 sm9 md8 lg5>
+              <v-card
+                lg7
+                class="d-lg-flex justify-center wrap"
+                elevation="2"
+                shaped
+                tile
+              >
+                <v-col lg="5">
+                  <v-img
+                    src="../../public/images/single3.jpg"
+                    width="100%"
+                    height="100%"
+                  ></v-img>
+                </v-col>
+                <v-col lg="7">
+                  <v-card-text class="font-weight-light text-h6"
+                    >3rd Single</v-card-text
+                  >
+                  <v-card-text class="font-weight-regular text-h6"
+                    >『君を穿つ』</v-card-text
+                  >
+                  <v-card-text class="font-weight-light text-h6"
+                    >2022.1</v-card-text
+                  >
+
+                  <br />
+                  <v-card-text class="font-weight-regular text-h5"
+                    ><a :href="disco3">https://linkco.re/</a></v-card-text
+                  >
+                </v-col>
+              </v-card>
+            </v-flex>
           </v-layout>
         </v-row>
       </div>
@@ -115,6 +154,7 @@ export default {
       isVisible02: false,
       disco1: "https://big-up.style/musics/444605",
       disco2: "https://linkco.re/v0QDdD3S?lang=ja",
+      disco3: "https://linkco.re/2G2br2Ez",
     }
   },
   methods: {

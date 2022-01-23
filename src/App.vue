@@ -59,7 +59,7 @@
 
     <v-footer padless class="white">
       <v-row justify="center">
-        <v-text class="my-5">© 2021 hiromasa_eve All right reserved. </v-text>
+        <v-text class="my-5">© 2022 hiromasa_eve All right reserved. </v-text>
       </v-row>
     </v-footer>
   </v-app>
