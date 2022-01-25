@@ -152,7 +152,7 @@ export default {
     return {
       isVisible01: false,
       isVisible02: false,
-      disco1: "https://big-up.style/musics/444605",
+      disco1: "https://big-up.style/nccRRpfQqu",
       disco2: "https://linkco.re/v0QDdD3S?lang=ja",
       disco3: "https://linkco.re/2G2br2Ez",
     }

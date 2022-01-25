@@ -129,7 +129,7 @@
                   </v-col>
                   <v-col lg="9">
                     <v-card-subtitle class="font-weight-light text-h6"
-                      >2nd Single</v-card-subtitle
+                      >3rd Single</v-card-subtitle
                     >
                     <v-card-text class="font-weight-regular text-h5"
                       >『君を穿つ』</v-card-text
