@@ -13,17 +13,6 @@
           no-resize
           id="subject"
         ></v-text-field>
-
-        <!-- <v-card-title
-            class=""
-            color="#60CAAD"
-            style=" margin-top:10px;font-size: 30px;color:#60CAAD;
-    "
-            ><span>
-              お名前
-            </span></v-card-title
-          > -->
-
         <v-text-field
           v-model="name"
           label="お名前"
@@ -32,17 +21,6 @@
           no-resize
           id="name"
         ></v-text-field>
-
-        <!-- <v-card-title
-            class=""
-            color="#60CAAD"
-            style=" margin-top:10px;font-size: 30px;color:#60CAAD;
-    "
-            ><span>
-              メール
-            </span></v-card-title
-          > -->
-
         <v-text-field
           v-model="mail"
           label="メールアドレス"
@@ -51,16 +29,6 @@
           no-resize
           id="mail"
         ></v-text-field>
-
-        <!-- <v-card-title
-            class=""
-            color="#60CAAD"
-            style=" margin-top:10px;font-size: 30px;color:#60CAAD;
-    "
-            ><span>
-              内容
-            </span></v-card-title
-          > -->
 
         <v-text-field
           v-model="content"
@@ -73,7 +41,6 @@
         ></v-text-field>
 
         <v-btn v-on:click="request" class="mt-4 justify-center">送信</v-btn>
-        <!-- <Loading v-show="loading"></Loading> -->
       </div>
     </v-container>
     <icon-bar></icon-bar>

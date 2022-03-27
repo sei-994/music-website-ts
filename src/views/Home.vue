@@ -230,7 +230,7 @@
           <v-row justify="center" class="mt-6 mb-15">
             <v-card class="rounded-circle">
               <v-img
-                src="../../public//images/hiromasa.jpg"
+                src="../../public//images/博聖様アイコン横顔.jpg"
                 class="contact-img"
               ></v-img>
             </v-card>
